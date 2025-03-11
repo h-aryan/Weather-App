@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary: #1a5a83;
+    --dark-grey: #4c4c4c;
+    --light-grey: #969696;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    background: linear-gradient(to top, #87CEFA, #dadae1) no-repeat;
+}
+
+button {
+    color: white;
+    background-color: var(--primary);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.not-visible {
+    display: none !important;
+}
+
+/* -------------------------------- TOP NAV -------------------------------- */
+.top-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 20px;
+}
+
+.logo-icon {
+    max-width: 20%;
+    min-width: 100px;
+    max-height: 20%;
+    min-height: 100px;
+}
+
+#form {
+    justify-self: center;
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#location-input {
+    border: transparent;
+    border-radius: 25px;
+    padding: 20px 20px 20px 20px;
+    background-color: var(--primary);
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+
+#location-input::placeholder {
+    color: #c4d0d6;
+    opacity: 1;
+}
+
+#location:focus {
+    background-color: var(--primary);
+    outline: white;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.temp-switch-buttons {
+    justify-self: flex-end;
+    display: flex;
+}
+
+.temp-button {
+    display: flex;
+    justify-content: center;
+    border: transparent;
+    border-radius: 20px;
+    padding: 0px 20px 0px 20px;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.temp-icons {
+    filter: invert(100%);
+}
+
+/* -------------------------------- CONTENT -------------------------------- */
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.current-weather-img {
+    width: 130px;
+    height: 130px;
+}
+
+.current-weather {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-info {
+    display: flex;
+    padding-top: 20px;
+    gap: 30px;
+    text-align: center;
+}
+
+.current-conditions {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-city {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--dark-grey);
+    line-height: 0.6;
+}
+
+.current-country {
+    font-size: 24px;
+    color: var(--dark-grey);
+}
+
+.current-date {
+    line-height: 2;
+}
+
+.current-temp {
+    font-size: 26px;
+    color: var(--dark-grey);
+}
+
+.current-feels-like {
+    font-size: 15px;
+    color: var(--light-grey);
+}
+
+.current-precipitation {
+    padding-top: 10px;
+    font-size: 22px;
+    color: var(--dark-grey);
+}
+
+.current-windspeed {
+    font-size: 22px;
+    color: var(--dark-grey);
+}
+
+.current-description {
+    padding-top: 14px;
+    font-size: 20px;
+    color: var(--dark-grey);
+}
+
+.wind-direction {
+    width: 100px;
+    height: 100px;
+}
+/* -------------------------------- FOOTER  -------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#git-link {
+    text-decoration: none;
+    letter-spacing: 0;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    height: 38px;
+}
+
+#git-logo {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#git-link:hover #git-logo {
+    transform: rotate(360deg) scale(1.2);
+}
+
+@media (max-width: 1000px) {
+    .top-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 80px 50px;
+        margin: 20px 10px 10px 10px;
+        gap: 10px;
+    }
+
+    #location-input {
+        padding: 15px 15px 15px 15px;
+        font-size: 15px;
+    }
+
+    .logo {
+        grid-column: 1;
+    }
+
+    .buttons {
+        grid-column: 2;
+    }
+
+    #form {
+        width: 80%;
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+}
