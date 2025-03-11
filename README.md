@@ -1,6 +1,6 @@
 # 🌦 Weather App
 
-A sleek and dynamic weather application that provides real-time weather data with animated icons and a background that changes based on weather conditions.
+A sleek and dynamic weather application that provides real-time weather data with animated icons.
 
 ## 🔗 Live Demo  
 🌥️[Weather App](https://h-aryan.github.io/Weather-App/)
