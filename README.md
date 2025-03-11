@@ -3,7 +3,7 @@
 A sleek and dynamic weather application that provides real-time weather data with animated icons and a background that changes based on weather conditions.
 
 ## 🔗 Live Demo  
-[Weather App](https://h-aryan.github.io/Weather-App/)
+🌥️[Weather App](https://h-aryan.github.io/Weather-App/)
 <br>
 <br>
 ![Weather App](https://i.imgur.com/XEYQ9lc.png)
