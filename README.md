@@ -4,7 +4,7 @@ A sleek and dynamic weather application that provides real-time weather data wit
 
 ## 🔗 Live Demo  
 [Weather App](https://h-aryan.github.io/Weather-App/)
-![Weather App](https://imgur.com/a/Z4fYPnm)
+![Weather App](https://i.imgur.com/XEYQ9lc.png)
 
 
 ## 🚀 Features  
