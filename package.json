@@ -2,14 +2,16 @@
   "name": "weather-app",
   "version": "1.0.0",
   "description": "Minimal Weather App",
-  "homepage": "https://h-aryan.github.io/Weather-App",
   "main": "index.js",
+  "homepage": "https://h-aryan.github.io/Weather-App",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "build": "webpack --mode production"
-  },
+  "start": "webpack serve --open",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "webpack --mode production",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
+
   "author": "Harsh Aryan",
   "license": "ISC",
   "devDependencies": {
@@ -23,6 +25,7 @@
     "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
-    "date-fns": "^4.1.0"
+    "date-fns": "^4.1.0",
+    "save-dev": "^0.0.1-security"
   }
 }
